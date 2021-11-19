@@ -1,0 +1,345 @@
+@charset "utf-8";
+/* Document CSS */
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 0.7cm;
+    font-weight: bold;
+    color: #4682B4;
+}
+
+h2, h3, h4 {
+    font-family: "ag_condensed", Helvetica, Verdana;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.imglogo {
+    width: 5%;
+    height: 2%;
+}
+
+.image {
+    width:777px;
+    height:324px;
+}
+
+#menu {
+    overflow: hidden;
+    background-color: white;
+}
+
+#menu a {
+    float: right;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#menu a.active {
+    background-color: #ADD8E6;
+    color: blue;
+}
+
+.sticky {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.container {
+    z-index: 1;
+    position: relative;
+}
+
+.description {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-width: 0.01cm;
+    border-style: solid;
+    font-size: 100%;
+    font-weight:normal;
+    padding: 1em;
+    margin-right: 2em;
+}
+
+.actu {
+    text-align: left;
+    font-size: 100%;
+    margin-bottom: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-width: 0.01cm;
+    border-style: solid;
+    font-weight:normal;
+    padding: 1em;
+}
+
+.texte1 {
+    display: flex;
+}
+
+.piedpage {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2em;
+    border: 0cm;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    background-color:#9ACD32;
+    padding-left: 15%;
+    padding-right: 1%;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    height: 4em;
+}
+
+.piedpage1 {
+    border: 0cm;
+    border-style: solid;
+    display: flex;
+    background-color:#ffd700;
+    align-items: center;
+    height: 4em;
+    margin-bottom: -2em;
+    min-width:auto;
+}
+
+#Copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 10%;
+    font-style: italic;
+}
+
+#follow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    padding-left: 25%;
+    color: #8B0000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    padding-left: 10%;
+    color: #8B0000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#mentions {
+    font-size: 85%;
+    padding-left: 25%;
+    padding-right: 1%;
+    color: #1E90FF;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#linkedin {
+    padding-left: 42.5%;
+}
+
+#facebook {
+    padding-left: 1%;
+}
+
+#twitter {
+    padding-left: 1%;
+}
+
+#wikipedia {
+    padding-left:10%
+}
+
+#fcba {
+    padding-left:1%
+}
+
+.prestations {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divimg {
+    padding: 1em;
+    width: 50%;
+    height: auto;
+}
+
+.txtprestation {
+    font-family: Arial, Helvetica, sans-serif;
+    border-width: 0.01cm;
+    border-style: solid;
+    font-size: 100%;
+    font-weight:normal;
+    padding: 1em;
+    width : 50%;
+    margin:1em;
+}
+
+.imgprestation {
+    max-width: 100%;
+}
+
+.form-group {
+    margin-left: 15%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: rgb(38, 58, 38);
+}
+
+.form-row {
+    display: flex;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: rgb(38, 58, 38);
+}
+
+.col-sm-10 {
+    font-size: 15px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+    background-color: #FA8072;
+    color: #fff;
+    font: 1.3rem "ag_light_condensed";
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.button {
+    text-align: right;
+}
+
+scroll-container {
+  display: block;
+  width: 739px;
+  height: 284px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+scroll-page {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 5em;
+}
+
+/* https://codepen.io/ongtiffany/pen/BoOeQV */
+
+.lightbox-target {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+     
+}
+
+.lightbox-target img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+    max-height: 0%;
+    max-width: 0%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+      
+}
+    
+a.lightbox-close {
+    display: block;
+    width:50px;
+    height:50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+a.lightbox-close:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+a.lightbox-close:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top:10px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+
+.lightbox-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+      overflow:scroll;
+}
+    
+.lightbox-target:target img {
+    max-height: 100%;
+    max-width: 100%;
+}
+    
+.lightbox-target:target a.lightbox-close {
+    top: 0;
+}
